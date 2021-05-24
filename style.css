@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    position: relative;
+}
+
+.section{
+    background-image: url("images/pattern-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+img{
+    max-width:100%;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.your-location{
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    z-index: 1;
+}
+.search{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white; 
+    margin: 20px 20px;
+}
+.search input, .search button{
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+.search input{
+    font-size: 18px;
+    width: 100%;
+}
+.search button{
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search input:focus,
+.search button:active,
+.search input:active,
+.search button:focus {
+    border: none;
+    outline: none;
+}
+#map{
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+@media (max-width: 720px){
+    .location{
+        text-align: center;
+        border: 3px solid lightgrey;
+        padding: 15px;
+        line-height: 2rem;
+        margin: 10px 40px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}

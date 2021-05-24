@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>IP Address Tracker</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+		<!-- Make sure you put this AFTER Leaflet's CSS -->
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+		></script>
+	</head>
+	<body>
+		<div class="section"></div>
+		<div class="your-location">
+			<h1>IP Address Tracker</h1>
+			<div class="search">
+				<input type="text" placeholder="Search for any IP address or domain" />
+				<button type="button">
+					<img src="images/icon-arrow.svg" alt="" />
+				</button>
+			</div>
+			<div class="location">
+				<span
+					>IP Address
+					<h3 class="address">192.224.202.10</h3>
+				</span>
+				<span
+					>Location
+					<h3 class="locat">Ikorodu, Lagos Nigeria</h3>
+				</span>
+				<span class="time">
+					Timezone
+					<h3 class="utc">UTC-05:00</h3>
+				</span>
+				<span
+					>ISP
+					<h3 class="isp">Microsoft Nigeria</h3>
+				</span>
+			</div>
+		</div>
+		<div id="map"></div>
+		<script src="app.js"></script>
+	</body>
+</html>
